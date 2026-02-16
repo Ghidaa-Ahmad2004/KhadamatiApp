@@ -5,16 +5,43 @@
     android:orientation="vertical"
     android:padding="20dp">
 
-    <EditText android:id="@+id/etName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Full Name" />
-    <EditText android:id="@+id/etPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Phone Number" android:inputType="phone" />
-    <EditText android:id="@+id/etEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Email" android:inputType="textEmailAddress" />
-    <EditText android:id="@+id/etLocation" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Location" />
+    <!-- حقل الاسم: يجب أن يكون النوع text ليقبل أحرف -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:inputType="textPersonName" />
+
+    <!-- حقل الهاتف: يبقى phone ليقبل أرقام فقط -->
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone" />
+
+    <!-- حقل الإيميل: يقبل أحرف ورموز الإيميل -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress" />
+
+    <!-- حقل الموقع: يجب أن يكون text ليقبل أحرف وأرقام -->
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:inputType="text" />
 
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:backgroundTint="#2275FF"
         android:text="Submit Request" />
+
 </LinearLayout>
