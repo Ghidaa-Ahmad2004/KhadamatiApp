@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="270dp"
+        android:layout_height="237dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/khadamatiistart" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#1E72FD"
+        android:text="Start" />
+
+</RelativeLayout>
