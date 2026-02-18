@@ -21,9 +21,9 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.ViewHold
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        // استخدام Binding لنفخ واجهة العنصر
         ItemServiceBinding binding = ItemServiceBinding.inflate(LayoutInflater.from(context), parent, false);
         return new ViewHolder(binding);
+
     }
 
     @Override
@@ -44,7 +44,7 @@ public class ServiceAdapter extends RecyclerView.Adapter<ServiceAdapter.ViewHold
     public int getItemCount() { return serviceList.size(); }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        ItemServiceBinding binding; // تعريف البايندينج بدلاً من المكونات المنفردة
+        ItemServiceBinding binding;
 
         public ViewHolder(ItemServiceBinding binding) {
             super(binding.getRoot());

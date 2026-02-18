@@ -11,6 +11,8 @@ public class Service implements Serializable {
         this.name = name;
         this.description = description;
         this.imageResId = imageResId;
+
+
     }
 
     public String getName() { return name; }

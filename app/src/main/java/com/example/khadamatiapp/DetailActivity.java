@@ -23,7 +23,20 @@ public class DetailActivity extends AppCompatActivity {
         }
 
         binding.requestServiceBtn.setOnClickListener(v -> {
-            startActivity(new Intent(this, RequestServiceActivity.class));
+            Intent intent = new Intent(this, RequestServiceActivity.class);
+            if (service != null) {
+                intent.putExtra("service_name", service.getName());
+            }
+            startActivity(intent);
+        });
+
+        binding.btnLogout.setOnClickListener(v -> {
+            Intent intent = new Intent(DetailActivity.this, LoginActivity.class);
+
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+            startActivity(intent);
+            finish();
         });
     }
 }

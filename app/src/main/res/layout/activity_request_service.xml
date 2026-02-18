@@ -5,15 +5,32 @@
     android:orientation="vertical"
     android:padding="20dp">
 
-    <!-- حقل الاسم: يجب أن يكون النوع text ليقبل أحرف -->
+    <TextView
+        android:id="@+id/tvLastService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last requested service: None"
+        android:textColor="#FF5722"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:backgroundTint="#FF0000"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:textSize="12sp" />
     <EditText
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Full Name"
-        android:inputType="textPersonName" />
+        android:hint="Full Name (الاسم الكامل)"
+        android:inputType="text" />
 
-    <!-- حقل الهاتف: يبقى phone ليقبل أرقام فقط -->
     <EditText
         android:id="@+id/etPhone"
         android:layout_width="match_parent"
@@ -21,7 +38,6 @@
         android:hint="Phone Number"
         android:inputType="phone" />
 
-    <!-- حقل الإيميل: يقبل أحرف ورموز الإيميل -->
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
@@ -29,12 +45,11 @@
         android:hint="Email Address"
         android:inputType="textEmailAddress" />
 
-    <!-- حقل الموقع: يجب أن يكون text ليقبل أحرف وأرقام -->
     <EditText
         android:id="@+id/etLocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Location"
+        android:hint="Location (الموقع)"
         android:inputType="text" />
 
     <Button

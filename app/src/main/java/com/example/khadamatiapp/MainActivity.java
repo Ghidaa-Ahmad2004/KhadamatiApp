@@ -1,6 +1,7 @@
 package com.example.khadamatiapp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -45,5 +46,24 @@ public class MainActivity extends AppCompatActivity {
                 "techniques to ensure smooth finishing, long-lasting colors, and a clean professional appearance that enhances the beauty of your space.", R.drawable.painter));
         ServiceAdapter adapter = new ServiceAdapter(list, this);
         binding.recyclerView.setAdapter(adapter);
+        binding.btnLogout.setOnClickListener(v -> {
+            Intent intent = new Intent(this, LoginActivity.class);
+
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+            startActivity(intent);
+            finish();
+
+        });
+        binding.btnLogout.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, SplashActivity.class);
+
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+            startActivity(intent);
+            finish();
+        });
+
+
     }
 }

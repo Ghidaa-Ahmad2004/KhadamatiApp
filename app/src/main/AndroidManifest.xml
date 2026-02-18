@@ -13,7 +13,7 @@
         android:theme="@style/Theme.KhadamatiApp"
         tools:targetApi="31">
 
-        <!-- 1. شاشة البداية (Splash Screen) - تم جعلها المشغل الرئيسي للتطبيق -->
+        <!-- 1. شاشة البداية (تفتح أولاً) -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -23,20 +23,23 @@
             </intent-filter>
         </activity>
 
-        <!-- 2. الشاشة الرئيسية (قائمة الخدمات) -->
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+        <!-- 2. شاشة تسجيل الدخول -->
+        <activity android:name=".LoginActivity" android:exported="false" />
 
-        <!-- 3. شاشة تفاصيل الخدمة -->
-        <activity
-            android:name=".DetailActivity"
-            android:exported="false" />
+        <!-- 3. شاشة إنشاء حساب جديد -->
+        <activity android:name=".RegisterActivity" android:exported="false" />
 
-        <!-- 4. شاشة نموذج طلب الخدمة -->
-        <activity
-            android:name=".RequestServiceActivity"
-            android:exported="false" />
+        <!-- 4. الشاشة الرئيسية (قائمة الخدمات) -->
+        <activity android:name=".MainActivity" android:exported="false" />
+
+        <!-- 5. شاشة لوحة تحكم الأدمن -->
+        <activity android:name=".AdminDashboardActivity" android:exported="false" />
+
+        <!-- 6. شاشة تفاصيل الخدمة -->
+        <activity android:name=".DetailActivity" android:exported="false" />
+
+        <!-- 7. شاشة نموذج طلب الخدمة -->
+        <activity android:name=".RequestServiceActivity" android:exported="false" />
 
     </application>
 

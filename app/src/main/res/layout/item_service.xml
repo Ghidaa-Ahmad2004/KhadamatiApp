@@ -13,7 +13,7 @@
         android:orientation="vertical"
         android:padding="12dp">
 
-        <!-- تحسين الصورة: عرض ثابت وارتفاع متناسق مع إظهار الصورة كاملة -->
+
         <ImageView
             android:id="@+id/serviceImage"
             android:layout_width="match_parent"
