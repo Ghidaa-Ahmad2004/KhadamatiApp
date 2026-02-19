@@ -6,6 +6,7 @@
     android:padding="20dp"
     android:gravity="center_horizontal">
 
+    <!-- زر تسجيل الخروج -->
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
@@ -17,12 +18,15 @@
         android:layout_alignParentEnd="true"
         android:layout_margin="10dp"
         android:textSize="12sp" />
+
+    <!-- صورة الخدمة -->
     <ImageView
         android:id="@+id/detailImage"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="centerCrop"/>
 
+    <!-- اسم الخدمة -->
     <TextView
         android:id="@+id/detailName"
         android:layout_width="wrap_content"
@@ -31,6 +35,7 @@
         android:textStyle="bold"
         android:layout_marginTop="20dp"/>
 
+    <!-- وصف الخدمة -->
     <TextView
         android:id="@+id/detailDesc"
         android:layout_width="match_parent"
@@ -39,11 +44,12 @@
         android:layout_marginTop="16dp"
         android:textAlignment="center"/>
 
+    <!-- زر طلب الخدمة -->
     <Button
         android:id="@+id/requestServiceBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:backgroundTint="#186DFD"
-        android:text="Request Service" />
+        android:text="@string/request_service" />
 </LinearLayout>

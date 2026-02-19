@@ -7,13 +7,14 @@
     app:cardCornerRadius="12dp"
     app:cardElevation="5dp">
 
+    <!-- LinearLayout داخلي لترتيب عناصر كل بطاقة عمودياً -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="12dp">
 
-
+        <!-- صورة الخدمة -->
         <ImageView
             android:id="@+id/serviceImage"
             android:layout_width="match_parent"
@@ -23,17 +24,19 @@
             android:background="#F8F8F8"
             android:layout_gravity="center" />
 
+        <!-- اسم الخدمة -->
         <TextView
             android:id="@+id/serviceName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:layout_gravity="center"
-            android:text="Service Name"
+            android:text="@string/service_name"
             android:textColor="#333333"
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        <!-- زر عرض التفاصيل لكل خدمة -->
         <Button
             android:id="@+id/viewDetailsBtn"
             android:layout_width="170dp"
@@ -41,7 +44,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="8dp"
             android:backgroundTint="#1C6FFA"
-            android:text="View Details"
+            android:text="@string/view_details"
             android:textAllCaps="false"
             android:textColor="#FFFFFF" />
 

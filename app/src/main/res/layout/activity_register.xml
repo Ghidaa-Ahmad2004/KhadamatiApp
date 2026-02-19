@@ -7,15 +7,17 @@
     android:gravity="center"
     android:background="#F5F5F5">
 
+    <!-- عنوان صفحة إنشاء حساب جديد -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:text="Create a new account "
+        android:text="@string/create_a_new_account"
         android:textColor="#0947AF"
         android:textSize="24sp"
         android:textStyle="bold" />
 
+    <!--  إدخال الاسم الكامل -->
     <EditText
         android:id="@+id/etRegName"
         android:layout_width="match_parent"
@@ -24,14 +26,16 @@
         android:hint="Full Name"
         android:inputType="textPersonName" />
 
+    <!--  إدخال البريد الإلكتروني -->
     <EditText
         android:id="@+id/etRegEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:hint="e-mail "
+        android:hint="@string/e_mail"
         android:inputType="textEmailAddress" />
 
+    <!--  إدخال كلمة المرور -->
     <EditText
         android:id="@+id/etRegPassword"
         android:layout_width="match_parent"
@@ -39,7 +43,16 @@
         android:layout_marginBottom="20dp"
         android:hint="Password"
         android:inputType="textPassword" />
+    <!-- إدخال رقم الهاتف  -->
+    <EditText
+        android:id="@+id/etRegPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Phone Number"
+        android:inputType="phone" />
 
+    <!-- زر إنشاء الحساب -->
     <Button
         android:id="@+id/btnRegisterSubmit"
         android:layout_width="match_parent"

@@ -5,7 +5,7 @@
     android:background="#FFFFFF"
     android:padding="20dp">
 
-
+    <!-- شعار التطبيق في منتصف الصفحة -->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="200dp"
@@ -13,6 +13,7 @@
         android:layout_centerInParent="true"
         android:src="@drawable/khadamatiistart" />
 
+    <!-- زر البداية Start في أسفل الصفحة -->
     <Button
         android:id="@+id/startBtn"
         android:layout_width="match_parent"
@@ -20,7 +21,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="50dp"
         android:backgroundTint="#2196F3"
-        android:text="Start "
+        android:text="@string/start"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold" />

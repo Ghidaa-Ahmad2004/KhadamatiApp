@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- عنوان لوحة التحكم للأدمن -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -12,10 +13,11 @@
         android:background="#121CA2"
         android:backgroundTint="#6498EF"
         android:gravity="center"
-        android:text="Admin Control Panel - All Requests "
+        android:text="@string/admin_control_panel_all_requests"
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <!-- زر تسجيل الخروج -->
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
@@ -27,16 +29,19 @@
         android:layout_alignParentEnd="true"
         android:layout_margin="10dp"
         android:textSize="12sp" />
+
+    <!-- ScrollView لعرض جميع الطلبات بشكل قابل للتمرير -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <!-- TextView لعرض قائمة الطلبات -->
         <TextView
             android:id="@+id/tvRequestsList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:lineSpacingExtra="8dp"
-            android:text="There are no requests currently "
+            android:text="@string/there_are_no_requests_currently"
             android:textSize="16sp" />
     </ScrollView>
 

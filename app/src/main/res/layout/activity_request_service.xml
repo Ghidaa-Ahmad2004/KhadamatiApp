@@ -5,58 +5,67 @@
     android:orientation="vertical"
     android:padding="20dp">
 
+    <!-- عرض آخر خدمة طلبها المستخدم -->
     <TextView
         android:id="@+id/tvLastService"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Last requested service: None"
+        android:text="@string/last_requested_service_none"
         android:textColor="#FF5722"
         android:layout_marginBottom="20dp"
         android:textStyle="bold" />
+
+    <!-- زر تسجيل الخروج -->
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logout"
+        android:text="@string/logout"
         android:backgroundTint="#FF0000"
         android:textColor="#FFFFFF"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="10dp"
         android:textSize="12sp" />
+
+    <!--  إدخال الاسم الكامل -->
     <EditText
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Full Name (الاسم الكامل)"
+        android:hint="@string/full_name"
         android:inputType="text" />
 
+    <!--  إدخال رقم الهاتف -->
     <EditText
         android:id="@+id/etPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Phone Number"
+        android:hint="@string/phone_number"
         android:inputType="phone" />
 
+    <!--  إدخال البريد الإلكتروني -->
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email Address"
+        android:hint="@string/email_address"
         android:inputType="textEmailAddress" />
 
+    <!--  إدخال الموقع -->
     <EditText
         android:id="@+id/etLocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Location (الموقع)"
+        android:hint="@string/location"
         android:inputType="text" />
 
+    <!-- زر إرسال الطلب -->
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Submit Request" />
+        android:text="@string/submit_request" />
 
 </LinearLayout>

@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">KhadamatiApp</string>
+    <string name="view_details">View Details</string>
+    <string name="service_name">Service Name</string>
+    <string name="start">Start</string>
+    <string name="last_requested_service_none">Last requested service: None</string>
+    <string name="logout">Logout</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="location">Location</string>
+    <string name="submit_request">Submit Request</string>
+    <string name="e_mail">e-mail</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="choose_a_service">Choose a Service</string>
+    <string name="password">password</string>
+    <string name="entrance">entrance</string>
+    <string name="new_user_register_your_request_here">New user? Register your request here</string>
+    <string name="login">Login</string>
+    <string name="request_service">Request Service</string>
+    <string name="there_are_no_requests_currently">There are no requests currently</string>
+    <string name="admin_control_panel_all_requests">Admin Control Panel - All Requests</string>
+    <string name="search_for_a_service">Search for a service...</string>
 </resources>
